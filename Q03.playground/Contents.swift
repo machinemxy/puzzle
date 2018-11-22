@@ -1,17 +1,12 @@
 import UIKit
 
 //init cards
-var cards = [Bool]()
-for _ in 1...101 {
-    cards.append(false)
-}
+var cards = Array(repeating: false, count: 101)
 
 //flip cards
 for i in 2...100 {
-    var j = i
-    while j <= 100 {
+    for j in stride(from: i, through: 100, by: i) {
         cards[j] = !cards[j]
-        j += i
     }
 }
 
