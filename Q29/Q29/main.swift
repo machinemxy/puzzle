@@ -40,6 +40,8 @@ func getResistance(parts: Int) -> Set<Double> {
         }
     }
     
+    resultDic[parts] = result
+    
     return result
 }
 
