@@ -1,6 +1,9 @@
 import UIKit
 
-//進数ロジック実装
+// 問題
+// 10進数、2進数、8進数のいずれで表現しても回文数となる数のうち、10進数の10以上で最小の値を求めてください。
+
+// 進数ロジック実装
 func cal(n: Int, x: Int) -> String {
     var str = ""
     var restNum = n
